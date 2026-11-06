@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You're Invited!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="balloons" id="balloons" aria-hidden="true"></div>
+
+  <main class="stage">
+
+    <button class="envelope-button" id="envelope" type="button">
+
+      <span class="envelope">
+        <span class="envelope__back"></span>
+        <span class="envelope__letter">
+          <span class="envelope__letter-line"></span>
+          <span class="envelope__letter-line"></span>
+        </span>
+        <span class="envelope__pocket"></span>
+        <span class="envelope__flap"></span>
+        <span class="envelope__seal">&hearts;</span>
+      </span>
+      <span class="envelope-button__hint">You've got an invitation! Tap to open!</span>
+
+    </button>
+
+    <article class="card" id="card" tabindex="-1" hidden>
+
+      <p class="card__eyebrow">Congratulations!</p>
+      <h1 class="card__title">You have been invited to Iva's 22nd birthday party!</h1>
+      <p class="card__intro">Come and celebrate a very special birthday.</p>
+
+      <dl class="details">
+        <div class="detail detail--yellow">
+          <dt><span aria-hidden="true">📍</span> Place</dt>
+          <dd>Iva's home</dd>
+        </div>
+        <div class="detail detail--mint">
+          <dt><span aria-hidden="true">⏰</span> Time</dt>
+          <dd>Saturday, 20:00h</dd>
+        </div>
+        <div class="detail detail--lilac">
+          <dt><span aria-hidden="true">👗</span> Dress code</dt>
+          <dd>Pick your best outfit</dd>
+        </div>
+      </dl>
+
+      <button class="cake-button" id="cake" type="button">
+        <svg class="cake" viewBox="0 0 120 120" aria-hidden="true">
+          <ellipse class="cake__smoke" cx="60" cy="18" rx="4" ry="6"/>
+          <ellipse class="cake__flame" cx="60" cy="18" rx="5" ry="9"/>
+          <rect x="56" y="28" width="8" height="26" rx="3" fill="#8fd6c2"/>
+          <rect x="30" y="52" width="60" height="26" rx="8" fill="#f9a8c0"/>
+          <path d="M30 60q0-8 8-8h44q8 0 8 8v4q-5 6-10 0q-5 6-10 0q-5 6-10 0q-5 6-10 0q-5 6-10 0q-5 6-10 0z" fill="#fffaf3"/>
+          <rect x="18" y="76" width="84" height="30" rx="10" fill="#f47fa4"/>
+          <circle cx="36" cy="90" r="3" fill="#ffe08a"/>
+          <circle cx="54" cy="96" r="3" fill="#fffaf3"/>
+          <circle cx="70" cy="88" r="3" fill="#ffe08a"/>
+          <circle cx="86" cy="95" r="3" fill="#fffaf3"/>
+          <rect x="8" y="104" width="104" height="7" rx="3.5" fill="#6b3459"/>
+        </svg>
+        <span class="cake-button__label" id="cake-label">Tap the cake to wish Iva a happy birthday</span>
+      </button>
+      
+    </article>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
